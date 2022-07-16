@@ -25,7 +25,7 @@ header {
   du header.*/
   display: grid;
   grid-template-columns: 180px 150px auto;
-  grid-template-rows: 100px minmax(100px 150px);
+  grid-template-rows: 70px minmax(100px 150px);
   grid-template-areas: "maxim pierre adolf" "jean pierre mark";
 }
 header .vide1 {
@@ -36,6 +36,7 @@ header .logo {
 }
 header menu {
   grid-area: adolf;
+  background-color: darkcyan;
 }
 header menu ul {
   display: flex;
@@ -45,6 +46,7 @@ header .vide2 {
 }
 header nav {
   grid-area: mark;
+  background-color: darkslategray;
 }
 header nav ul {
   display: flex;

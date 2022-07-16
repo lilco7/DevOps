@@ -16,14 +16,14 @@ header{
     du header.*/
     display: grid;
     grid-template-columns: 180px 150px auto;
-    grid-template-rows: 100px minmax(100px 150px);
+    grid-template-rows: 70px minmax(100px 150px);
     grid-template-areas: "maxim pierre adolf" "jean pierre mark";
     .vide1{grid-area: maxim;}
     .logo{grid-area: pierre;}
-    menu{grid-area: adolf; }
+    menu{grid-area: adolf; background-color: darkcyan;}
     menu ul{display: flex;}
     .vide2{grid-area: jean;}
-    nav{grid-area: mark; }
+    nav{grid-area: mark; background-color: darkslategray;}
     nav ul{display: flex;}
 }
 .banner{
