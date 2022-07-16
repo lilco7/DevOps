@@ -4,4 +4,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 150px 100px auto;
+  grid-template-rows: 200px 400px 500px 150px;
+}
+
 /*# sourceMappingURL=puma.css.map */
