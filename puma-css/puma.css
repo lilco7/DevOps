@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +9,57 @@
   display: grid;
   grid-template-columns: 150px 100px auto;
   grid-template-rows: 200px 400px 500px 150px;
-  grid-area: "hider hider hider" "band band band" "half half half" "foot foot foot";
+  grid-template-areas: "hider hider hider" "band band band" "half half half" "foot foot foot";
 }
 
 .commun {
   border: 1px solid #111;
+}
+
+header {
+  /* Ici on indique au header qu'il doit occuper
+   toutes les tois colones de la première ligne de notre grille.*/
+  grid-area: hider;
+  /*Par ailleurs on va créer une autre grille
+  à l'intérieur du header afin de pouvoir placer les éléments
+  du header.*/
+  display: grid;
+  grid-template-columns: 180px 150px auto;
+  grid-template-rows: 100px minmax(100px 150px);
+  grid-template-areas: "maxim pierre adolf" "jean pierre mark";
+}
+header .vide1 {
+  grid-area: maxim;
+}
+header .logo {
+  grid-area: pierre;
+}
+header menu {
+  grid-area: adolf;
+}
+header menu ul {
+  display: flex;
+}
+header .vide2 {
+  grid-area: jean;
+}
+header nav {
+  grid-area: mark;
+}
+header nav ul {
+  display: flex;
+}
+
+.banner {
+  grid-area: band;
+}
+
+.midle {
+  grid-area: half;
+}
+
+footer {
+  grid-area: foot;
 }
 
 /*# sourceMappingURL=puma.css.map */
