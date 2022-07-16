@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: 150px 100px auto;
   grid-template-rows: 200px 400px 500px 150px;
+  grid-area: "hider hider hider" "band band band" "half half half" "foot foot foot";
 }
 
 .commun {
