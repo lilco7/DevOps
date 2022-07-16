@@ -82,7 +82,29 @@ ul li a {
 }
 
 .midle {
+  /*Aprés avoir affecter une zone à cette sacetion*/
   grid-area: half;
+  /*Nous allons pouvoir positionner les 
+  éléments qu"il contient*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+.midle .face1 {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #ccc;
+  position: relative;
+  top: -100px;
+}
+.midle .face1 .face-child {
+  border: 1px solid #ccc;
+  width: 150px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
 }
 
 footer {
