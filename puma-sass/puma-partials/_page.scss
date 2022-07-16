@@ -7,9 +7,9 @@
                          "half half half" 
                          "foot foot foot";
 }
-.commun{
-    border: 1px solid #111;
-}
+// .commun{
+//     border: 1px solid #111;
+// }
 header{
     /* Ici on indique au header qu'il doit occuper
      toutes les tois colones de la première ligne de notre grille.*/
@@ -19,10 +19,10 @@ header{
     du header.*/
     display: grid;
     grid-template-columns: 180px 150px auto;
-    grid-template-rows: 70px minmax(100px 150px);
+    grid-template-rows: 70px auto;
     grid-template-areas: "maxim pierre adolf" "jean pierre mark";
 
-    .vide1{grid-area: maxim;}
+    .vide1{grid-area: maxim; background-color: darkslategray;}
     .logo{grid-area: pierre;}
 
     menu{grid-area: adolf; background-color: darkcyan;}
@@ -32,7 +32,7 @@ header{
         align-items: center;
     }
 
-    .vide2{grid-area: jean;}
+    .vide2{grid-area: jean; background-color: darkcyan;}
     nav{grid-area: mark; background-color: darkslategray;}
     nav ul{
         display: flex;
@@ -45,12 +45,25 @@ ul li{
     a{
         text-decoration: none;
         font-size: 20px;
+        font-style: italic;
         color: aliceblue;
         line-height: 4;
     }
 }
 .banner{
     grid-area: band;
+     text-align: center;
+     line-height: 3;
+     text-transform: capitalize;
+     color: darkslategray;
+     letter-spacing: 2px;
+     word-spacing: 6px;
+     p{
+        font-size: 20px;
+     }
+     .petit{
+        font-size: 12px
+     }
 }
 .midle{
     grid-area: half;
