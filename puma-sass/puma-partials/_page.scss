@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 150px 100px auto;
-    grid-template-rows: 200px 400px 500px 150px;
+    grid-template-rows: 200px 600px 700px 150px;
     grid-template-areas: "hider hider hider" 
                          "band band band" 
                          "half half half" 
@@ -23,7 +23,13 @@ header{
     grid-template-areas: "maxim pierre adolf" "jean pierre mark";
 
     .vide1{grid-area: maxim; background-color: darkslategray;}
-    .logo{grid-area: pierre;}
+    .logo{
+        grid-area: pierre;
+        background-color: darkslategray;
+        background-image: url(/puma-pictures/Big-Cat.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
     menu{grid-area: adolf; background-color: darkcyan;}
     menu ul{
@@ -53,20 +59,27 @@ ul li{
 .banner{
     grid-area: band;
      text-align: center;
-     line-height: 3;
+     padding: 50px;
+     line-height: 2;
      text-transform: capitalize;
-     color: darkslategray;
+     color: darkcyan;
      letter-spacing: 2px;
-     word-spacing: 6px;
+     word-spacing: 20px;
      background-image: url(/puma-pictures/maria-fernanda.png);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
+     
+     .puma{
+        font-size: 30px;
+        font-weight: bold;
+     }
      p{
-        font-size: 20px;
+        font-size: 40px;
+        font-weight: bolder;
      }
      .petit{
-        font-size: 12px
+        font-size: 20px
      }
 }
 .midle{
@@ -79,19 +92,20 @@ ul li{
     align-items: center;
     border: 1px solid #ccc;
      
-    .face1{
+    .face{
         width: 300px;
         height: 350px;
         border: 1px solid #ccc;
         position: relative;
-        top: -100px;
+        top: -200px;
         .face-child{
             border: 1px solid #ccc;
             width: 150px;
             height: 200px;
             margin: 0 auto;
-            position: relative;
-            top: 100px;
+            position: relative; 
+         
+            bottom: -100PX;
         }
     }
      
