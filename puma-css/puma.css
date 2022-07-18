@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(180, 180, 180);
+}
+
 .container {
   display: grid;
   grid-template-columns: 150px 100px auto;
@@ -21,7 +25,7 @@ header {
   du header.*/
   display: grid;
   grid-template-columns: 180px 150px auto;
-  grid-template-rows: 70px auto;
+  grid-template-rows: 50px auto;
   grid-template-areas: "maxim pierre adolf" "jean pierre mark";
 }
 header .vide1 {
@@ -66,7 +70,7 @@ ul li a {
   font-size: 20px;
   font-style: italic;
   color: aliceblue;
-  line-height: 4;
+  line-height: 3;
 }
 
 .banner {
