@@ -27,6 +27,9 @@ header {
   grid-template-columns: 180px 150px auto;
   grid-template-rows: 50px auto;
   grid-template-areas: "maxim pierre adolf" "jean pierre mark";
+  position: fixed;
+  width: 100%;
+  z-index: 6;
 }
 header .vide1 {
   grid-area: maxim;
@@ -35,9 +38,10 @@ header .vide1 {
 header .logo {
   grid-area: pierre;
   background-color: darkslategray;
-  background-image: url(/puma-pictures/Big-Cat.jpg);
+  background-image: url(/puma-pictures/Big-Cat-removebg-preview.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 header menu {
   grid-area: adolf;
@@ -98,6 +102,23 @@ ul li a {
 .banner .petit {
   font-size: 20px;
 }
+.banner .btn {
+  position: relative;
+  top: 150px;
+  border: 1px solid #111;
+  height: 60px;
+}
+.banner .btn button {
+  width: 150px;
+  height: 35px;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  background-color: springgreen;
+  border: none;
+  border-radius: 10pxw;
+}
 
 .midle {
   /*Aprés avoir affecter une zone à cette sacetion*/
@@ -123,6 +144,14 @@ ul li a {
   margin: 0 auto;
   position: relative;
   bottom: -100PX;
+}
+
+.f1 {
+  background-color: chartreuse;
+}
+
+.f2 {
+  background-color: springgreen;
 }
 
 footer {
