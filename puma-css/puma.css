@@ -145,14 +145,25 @@ ul li a {
   position: relative;
   bottom: -100PX;
   background-color: rgba(6, 196, 202, 0.507);
+  z-index: 6;
 }
 
 .f1 {
   background-color: chartreuse;
 }
+.f1 img {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
 
 .f2 {
   background-color: springgreen;
+}
+.f2 img {
+  position: absolute;
+  top: 160px;
+  left: 80px;
 }
 
 footer {
