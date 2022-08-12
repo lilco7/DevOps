@@ -58,6 +58,14 @@ ul li{
         color: aliceblue;
         line-height: 3;
     }
+    &:hover{
+        background-color: springgreen;
+        padding: 0 2px 0 2px;
+    }
+}
+.bg{
+    background-color: springgreen;
+    padding: 0 10px;
 }
 .banner{
     grid-area: band;
