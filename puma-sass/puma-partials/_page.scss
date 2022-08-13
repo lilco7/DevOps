@@ -24,6 +24,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 6;
+    background-color: seagreen;
     .vide1{grid-area: maxim; background-color: darkslategray;}
     .logo{
         grid-area: pierre;
@@ -47,10 +48,13 @@ header{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        
     }
 }
 ul li{
     list-style: none;
+    flex-basis: 10%;
+    text-align: center;
     a{
         text-decoration: none;
         font-size: 20px;
@@ -60,12 +64,10 @@ ul li{
     }
     &:hover{
         background-color: springgreen;
-        padding: 0 2px 0 2px;
     }
 }
 .bg{
     background-color: springgreen;
-    padding: 0 10px;
 }
 .banner{
     grid-area: band;
@@ -134,7 +136,7 @@ ul li{
             position: relative; 
             bottom: -100PX;
             background-color: rgba(6, 196, 202, 0.507);
-            z-index: 6;
+            z-index: 4;
         }
     }
      
